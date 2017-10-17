@@ -9,19 +9,12 @@
   <artifactId>lok-springCloud-eureka</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  <properties>
-  	<lombok.version>1.16.14</lombok.version>
-  </properties>
   
   <dependencies>
 	<dependency>
 	  	<groupId>org.springframework.boot</groupId>
 	  	<artifactId>spring-boot-starter-test</artifactId>
 	  	<scope>test</scope>
-	</dependency>
-	<dependency>
-	  	<groupId>org.springframework.boot</groupId>
-	  	<artifactId>spring-boot-starter-data-jpa</artifactId>
 	</dependency>
 	
 	<!-- springCloud -->
@@ -33,22 +26,10 @@
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-starter-eureka-server</artifactId>
 	</dependency>
-	  
-	  <!-- lombok -->
-	  <dependency>
-	  	<groupId>org.projectlombok</groupId>
-	  	<artifactId>lombok</artifactId>
-	  </dependency>
-	  
   </dependencies>
   
   <build>
   	<plugins>
-  		<!-- 配置打包 -->
-  		<!-- <plugin>
-  			<groupId>org.springframework.boot</groupId>
-  			<artifactId>spring-boot-maven-plugin</artifactId>
-  		</plugin> -->
   		<!-- 配置JDK -->
   		<plugin>
   			<groupId>org.apache.maven.plugins</groupId>
