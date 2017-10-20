@@ -7,6 +7,8 @@ server:
  port: 8000
 
 eureka: 
+ instance:
+  hostName: localhost
  client: 
 # 是否将自己注册到Eureka Server，默认为true
   register-with-eureka: false 
@@ -14,4 +16,4 @@ eureka:
   fetch-registry: false
   serviceUrl: 
 # 设置与Eureka Server交互的地址，查询/注册服务都需要依赖它。默认是http://localhost:8761/eureka ,多个地址用 逗号分隔
-   defaultZone: http://localhost:${server.port}/eureka/
+   defaultZone: http://${eureka.instance.hostName}:${server.port}/eureka/
