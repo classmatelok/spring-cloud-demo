@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * @Description 远程调用接口
+ * @Description 暴露服务接口
  * @date 2017年10月18日
  */
 @FeignClient(name="spring-cloud-provider")

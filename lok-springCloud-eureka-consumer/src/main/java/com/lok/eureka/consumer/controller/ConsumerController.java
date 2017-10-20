@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.lok.eureka.consumer.api.ConsumerInterface;
 
 /**
- * @Description 提供服务
+ * @Description 消费服务类
  * @date 2017年10月18日
  */
 @RestController
