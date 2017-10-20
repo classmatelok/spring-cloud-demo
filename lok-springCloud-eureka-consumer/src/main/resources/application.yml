@@ -20,3 +20,8 @@ hystrix:
     isolation:
      thread:
       timeoutInMilliseconds: 5000
+      
+# 开启Hystrix熔断
+feign:
+ hystrix:
+  enabled: true
