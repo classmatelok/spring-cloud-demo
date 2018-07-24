@@ -10,7 +10,7 @@ import com.lok.eureka.consumer.fallback.FeignFallback;
  * @Description 暴露服务接口
  * @date 2017年10月18日
  */
-@FeignClient(name="spring-cloud-provider", fallback = FeignFallback.class)//FeignFallback为熔断处理的类，可自己写一个类如TestFallback.java实现此接口，然后这里配置fallback=TestFallbac.class即可。
+@FeignClient(name="spring-cloud-provider", fallback = FeignFallback.class)//FeignFallback为熔断回调类，可自己写一个类如FeignFallback.java实现此接口，然后这里配置fallback=FeignFallback.class即可。
 public interface ConsumerInterface {
 	
 	@RequestMapping("/provider")
